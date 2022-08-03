@@ -1,7 +1,5 @@
-﻿using Farmasi_Project.Application.Command;
-using Farmasi_Project.Application.Handler;
+﻿using Farmasi_Project.Application.Features.Product.Commands;
 using Farmasi_Project.Application.Models;
-using Farmasi_Project.Application.Queries;
 using Farmasi_Project.Domain.Entities;
 using Farmasi_Project_API.Helper;
 using MediatR;

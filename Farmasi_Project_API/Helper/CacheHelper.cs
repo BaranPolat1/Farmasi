@@ -1,5 +1,5 @@
 ﻿using Farmasi_Project.Application.Common.Interfaces;
-using Farmasi_Project.Application.Queries;
+using Farmasi_Project.Application.Features.BasektItem.Queries;
 using Farmasi_Project.Domain.Entities;
 using MediatR;
 

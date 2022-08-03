@@ -9,7 +9,7 @@ namespace Farmasi_Project.Application.Common.Interfaces
 {
   public interface IApplicationDbContext
   {
-    public IMongoCollection<T> GetCollection<T>();
+    public IMongoCollection<T> GetCollection<T>() where T: class,new();
 
   }
 }

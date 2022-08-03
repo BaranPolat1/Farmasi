@@ -31,13 +31,11 @@ namespace Farmasi_Project.Infrastructure.Persistance
       _database = MongoClient.GetDatabase(_appSettings.MongoConnection.Database);
     }
 
-    public IMongoCollection<T> GetCollection<T>()
-    {
+		public IMongoCollection<T> GetCollection<T>() where T : class, new()
+		{
       ConfigureMongo();
 
       return _database.GetCollection<T>(typeof(T).Name);
     }
-
-
-  }
+	}
 }
