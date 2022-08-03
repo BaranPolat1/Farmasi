@@ -13,6 +13,7 @@ namespace Farmasi_Project.Domain.Entities
     [BsonId]
     [BsonRepresentation(BsonType.ObjectId)]
     public string Id { get; set; }
+    
     [BsonRepresentation(BsonType.DateTime)]
     [BsonDateTimeOptions(Kind = DateTimeKind.Utc)]
     [BsonElement(Order = 101)]
